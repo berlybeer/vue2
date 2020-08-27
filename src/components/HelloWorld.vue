@@ -1,10 +1,10 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <alert>First Alert</alert>
-    <alert>Second Alert</alert>
-    <alert>Third Alert</alert>
-    <alert>Last Alert</alert>
+    <alert mode="primary">First Alert</alert>
+    <alert mode="danger">Second Alert</alert>
+    <alert mode="success">Third Alert</alert>
+    <alert mode="secondary">Last Alert</alert>
     
   </div>
 </template>
