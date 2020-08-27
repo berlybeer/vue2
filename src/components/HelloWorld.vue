@@ -12,6 +12,10 @@
         Welcome, {{lastName}}
       </p>
     </div>
+
+    <button @click="ClickedMe">Click me</button>
+    <input type="text" @keyup.enter="doSomething" placeholder="Write your code">
+
     
   </div>
 </template>
@@ -25,6 +29,14 @@ export default {
   data(){
     return{
       lastName: 'Ali'
+    }
+  },
+  methods:{
+    ClickedMe: function(){
+      console.log("You click on the button")
+    },
+    doSomething(){
+      console.log("Coupon Applied")
     }
   }
 };
