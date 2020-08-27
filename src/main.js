@@ -4,6 +4,8 @@ import router from "./router";
 
 Vue.config.productionTip = false;
 
+Vue.component("alert", require('./components/Alert.vue').default);
+
 new Vue({
   router,
   render: h => h(App)
