@@ -1,7 +1,10 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="Welcome to Your Vue2  App" />
+	<div id="components-demo">
+	  <button-counter></button-counter>
+	</div>
   </div>
 </template>
 
