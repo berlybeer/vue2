@@ -16,6 +16,10 @@
     <button @click="ClickedMe">Click me</button>
     <input type="text" @keyup.enter="doSomething" placeholder="Write your code">
 
+    <h3>Usin Loop</h3>
+    <ul>
+      <li v-for="person in students">{{person}}</li>
+    </ul>
     
   </div>
 </template>
@@ -28,7 +32,13 @@ export default {
   },
   data(){
     return{
-      lastName: 'Ali'
+      lastName: 'Ali',
+      students: [
+        'Ali',
+        'Jan',
+        'Willian',
+        'Khan'
+      ]
     }
   },
   methods:{
@@ -52,7 +62,7 @@ ul {
   padding: 0;
 }
 li {
-  display: inline-block;
+  display: block;
   margin: 0 10px;
 }
 a {
